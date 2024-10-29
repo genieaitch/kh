@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원 가입</title>
+  </head>
+  <body>
+    <div>
+      <fieldset>
+        <legend>필수 입력 사항</legend>
+        <table>
+          <tr>
+            <th>ID</th>
+            <td>
+              <input type="text" placeholder="아이디 10글자 이내" name="id" />
+              <input type="submit" value="중복확인" />
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호</th>
+            <td>
+              <input
+                type="password"
+                placeholder="영문,숫자,특수문자 포함 8자 이상"
+                name="pw1"
+                size="29"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호 확인</th>
+            <td><input type="password" name="pw2" size="29" /></td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>
+              <input type="email" name="email1" />
+              <select name="email1">
+                <option>직접입력</option>
+                <option>naver.com</option>
+                <option>duam.com</option>
+                <option>nate.com</option>
+                <option>hanmail.net</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>추가 정보</legend>
+        <label> 성별 : </label>
+        <input type="radio" name="gender" value="남성" /> 남성
+        <input type="radio" name="gender" value="여성" /> 여성<br /><br />
+        <label> 생년월일 : </label>
+        <input type="date" name="birthday" /><br /><br />
+        <label>취미</label><br />
+        <input type="checkbox" name="hobby" value="야구" /> 야구
+        <input type="checkbox" name="hobby" value="농구" /> 농구
+        <input type="checkbox" name="hobby" value="축구" /> 축구<br />
+        <input type="checkbox" name="hobby" value="공부" /> 공부
+        <input type="checkbox" name="hobby" value="음악감상" /> 음악감상
+        <br /><br />
+        <label>자기소개</label><br />
+        <textarea rows="10" cols="80" name="intro"></textarea>
+        <br /><br />
+        <input type="submit" value="회원가입" />
+        <input type="submit" value="다시입력" />
+      </fieldset>
+    </div>
+  </body>
+</html>

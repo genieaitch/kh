@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맛있어 치킨가게 회원가입 결과</title>
+    <!--style태그를 하나씩 다 작성하지 않아도 만들어놓은 css파일이 있다면 link로 불러 올 수 있다-->
+    <link rel="stylesheet" href="241028_style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>맛있어 치킨가게 회원가입 완료</h1>
+      <h3>이름 : <span id="name-result"></span></h3>
+      <h3>아이디 : <span id="id-result"></span></h3>
+      <h3>비밀번호 : <span id="pw-result"></span></h3>
+      <h3>이메일 : <span id="email-result"></span></h3>
+      <h3>좋아하는 치킨 : <span id="chicken-result"></span></h3>
+
+      <script>
+        // script는 영어에서 대 소문자 구분을 하기 때문에 위에서 name-Result로 작성했다면 아래에서도 name-Result로 작성해야함
+        const B군 = new URL(location.href).searchParams;
+
+        const nameResult = document.getElementById("name-result");
+        const idResult = document.getElementById("id-result");
+        const pwResult = document.getElementById("pw-result");
+        const emailResult = document.getElementById("email-result");
+        const chickenResult = document.getElementById("chicken-result");
+
+        nameResult.innerText = B군.get("user-name");
+        idResult.innerText = B군.get("user-id");
+        pwResult.innerText = B군.get("user-pw");
+        emailResult.innerText = B군.get("user-email");
+        chickenResult.innerText = B군.get("favorite-chicken");
+
+        /* 쓰임과 의미가 같은 코드
+        const nameResult = document.getElementById("name-result");
+        nameResult.innerText = B군.get("user-name");
+        =
+        document.getElementById("name-result").innerText = B군.get("user-name");
+        */
+      </script>
+    </div>
+  </body>
+</html>
