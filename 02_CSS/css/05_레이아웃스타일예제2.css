@@ -1,0 +1,18 @@
+.T반 /*Z반은 가운데 정렬을 한다.*/ {
+  text-align: center;
+}
+.Z반 /*Z반은 가운데 정렬을 한다.*/ {
+  text-align: center;
+}
+.T반, /*T반과 Z반은 가운데 정렬을 한다.*/
+.Z반, .Y반 {
+  text-align: center;
+}
+.T반 .아이들,
+.Y반 .아이들 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.Z반 img {
+  width: 150px;
+}

@@ -1,0 +1,19 @@
+div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+.A {
+  padding: 20px; /* 상, 하, 좌, 우 모두 20px로 설정*/
+  background-color: red;
+}
+.B {
+  padding: 20px 60px; /*상하:20px 좌우:60px*/
+}
+.C {
+  padding: 10px 30px 100px; /*상:10px 좌우:30px 하:100px*/
+  background-color: yellow;
+}
+.D {
+  padding: 10px 20px 30px 40px; /*상:10px 우:20px 하:30px 좌:40px 시계방향*/
+}
