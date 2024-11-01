@@ -11,21 +11,34 @@
       .div-img {
         width: 100px;
         height: 100px;
+        background-color: lightblue;
+        border: 2px solid #333;
+      }
+      .div-img:hover {
+        display: none;
+        visibility: hidden;
+      }
+      .container {
+        display: flex;
+        width: 90%;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 10px;
       }
     </style>
-    <div class="container">
+    <div class="container" style="justify-content: space-between">
       <img class="div-img" src="../image/flower2.jpg" />
       <img class="div-img" src="../image/flower3.jpg" />
       <img class="div-img" src="../image/flower4.jpg" />
     </div>
 
-    <div class="container">
+    <div class="container" style="justify-content: space-around">
       <img class="div-img" src="../image/pumpkin.jpg" />
       <img class="div-img" src="../image/skull.jpg" />
       <img class="div-img" src="../image/web.jpg" />
     </div>
 
-    <div class="container">
+    <div class="container" style="justify-content: space-evenly">
       <img class="div-img" src="../image/flower1.jpg" />
       <img class="div-img" src="../image/ghost.jpg" />
       <img class="div-img" src="../image/flower5.jpg" />
