@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justify-content 와 align-items 활용하기</title>
+    <style>
+      .container {
+        display: flex;
+        height: 200px;
+        background-color: #f0f8ff;
+        padding: 20px;
+      }
+
+      .container div {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>justify-content 와 align-items 활용하기</h1>
+
+    <h4>1번 : 모든 아이템이 컨테이너의 가운데 중앙에 배치</h4>
+    <div class="container" style="justify-content: center; align-items: center">
+      <div style="background-color: lightcoral">아이템 1</div>
+      <div style="background-color: lightblue">아이템 2</div>
+    </div>
+
+    <h4>
+      2번 : 아이템 컨테이너 상단에 정렬 양쪽 끝 여백x 요소들 여백 동일하게 배치
+    </h4>
+    <div
+      class="container"
+      style="justify-content: space-between; align-items: flex-start"
+    >
+      <div style="background-color: lightcoral">아이템 1</div>
+      <div style="background-color: lightyellow">아이템 1</div>
+      <div style="background-color: lightblue">아이템 2</div>
+    </div>
+
+    <h4>
+      3번 : 아이템 컨테이너의 하단에 정렬 양쪽 끝 1/2 여백주고 안에 요소들
+      동일하게 배치
+    </h4>
+    <div
+      class="container"
+      style="justify-content: space-around; align-items: center"
+    >
+      <div style="background-color: lightcoral">아이템 1</div>
+      <div style="background-color: lightyellow">아이템 1</div>
+      <div style="background-color: lightblue">아이템 2</div>
+    </div>
+
+    <h3>4번 : 아이템 컨테이너 높이에 맞춰 늘어남 그리고 왼쪽에 정렬</h3>
+    <small>단 아이템 height가 직접적으로 적용되지 않아야함</small>
+    <br />
+    <small>align-items:strech보다 height가 우선적으로 적용되기 때문</small>
+    <div class="container" style="justify-content: flex-start">
+      <div style="background-color: lightcoral">아이템 1</div>
+      <div style="background-color: lightyellow">아이템 1</div>
+      <div style="background-color: lightblue">아이템 2</div>
+    </div>
+
+    <h3>5번 : 아이템 컨테이너 세로 한 가운데에 위치하고 오른쪽 정렬</h3>
+    <div
+      class="container"
+      style="justify-content: flex-end; align-items: center"
+    >
+      <div style="background-color: lightcoral">아이템 1</div>
+      <div style="background-color: lightyellow">아이템 1</div>
+      <div style="background-color: lightblue">아이템 2</div>
+    </div>
+
+    <h3>아이템들이 컨테이너 상단에 정렬되고, 가로 한 가운데 중앙에 배치</h3>
+    <div
+      class="container"
+      style="justify-content: center; align-items: flex-start"
+    >
+      <div style="background-color: lightcoral">아이템 1</div>
+      <div style="background-color: lightyellow">아이템 1</div>
+      <div style="background-color: lightblue">아이템 2</div>
+    </div>
+  </body>
+</html>
