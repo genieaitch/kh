@@ -11,7 +11,7 @@
     //처음에 새로운 변수명을 표기할 때는 const나 let을 붙이지만 변수명을 다시 사용할 때는 const나 let을 붙이지 않음
     let count = 0;
     const result = document.getElementById("result1");
-    const input = document.getElementById("input1").value;
+    const input = document.getElementById("input1");
 
     
 function minus(){
