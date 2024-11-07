@@ -18,10 +18,10 @@ function login(){
 function checkNumber(){
     const pn = document.getElementById("phone").value;
     const tn = document.getElementById("tel").value;
-    const mag = document.getElementById("msg");
+    const msg = document.getElementById("msg");
 
     //삼항 연산자로 입력 여부를 확인 한 후 메시지 표시 또는 메시지 숨기기
-    /*??*/(pn || tn) ? (msg.style.display = "none"): (msg.style.display = "block");
+    (pn || tn) ? (msg.style.display = "none"): (msg.style.display = "block");
 }
 
 
