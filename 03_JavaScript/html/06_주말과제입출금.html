@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입출금</title>
+  </head>
+  <body>
+    <div class="account">
+      <div class="row">
+        <h1>잔액 : <span id="output"></span>원</h1>
+      </div>
+      <div class="row">
+        <label for="amount"> 금액 :</label>
+        <input type="text" id="amount" />
+        <span>원</span>
+      </div>
+
+      <div class="row">
+        <button class="입금btn" onclick="입금기능()">입금</button>
+        <button class="출금btn" onclick="출금기능()">출금</button>
+      </div>
+    </div>
+    <script>
+      const output = document.getElementById("output");
+      const amount = document.getElementById("amount");
+      let balance = 10000;
+      output.innerText = balance;
+
+      function 입금기능() {
+        balance += Number(amount.value);
+        output.innerText = balance;
+        amount.value;
+      }
+      function 출금기능() {
+        balance -= Number(amount.value);
+        output.innerText = balance;
+        amount.value;
+        const 입금btn = prompt("비밀번호를 입력하세요");
+        if (prompt == 1234) {
+          output.innerText = "출금 완료";
+        } else {
+          alert = "비밀번호가 틀렸습니다";
+        }
+      }
+    </script>
+  </body>
+</html>
