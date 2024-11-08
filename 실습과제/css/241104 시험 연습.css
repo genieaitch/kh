@@ -1,3 +1,18 @@
-input {
-  width: 300px;
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
+
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.content;
