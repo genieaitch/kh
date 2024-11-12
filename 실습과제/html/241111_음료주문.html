@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 10px 20px;
+      }
+
+      button:hover {
+        background-color: burlywood;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>음료 주문하기</h1>
+      <button onclick="add('am')">아메리카노 (&#8361;3,000)</button>
+      <button onclick="add('cl')">카페라떼 (&#8361;5,500)</button>
+      <button onclick="add('dc')">디카페인 (&#8361;8,000)</button>
+
+      <h2 id="price">총 금액:&#8361;0</h2>
+    </div>
+    <script>
+      let coffeePrice = 0;
+      function add(abc) {
+        const price = document.getElementById("price");
+
+        switch (abc) {
+          case "am":
+            coffeePrice += Number("3000");
+            break;
+          case "cl":
+            coffeePrice += Number("5500");
+            break;
+          case "dc":
+            coffeePrice += Number("8000");
+            break;
+        }
+        price.innerText = coffeePrice;
+      }
+    </script>
+  </body>
+</html>
