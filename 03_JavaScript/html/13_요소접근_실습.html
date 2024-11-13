@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소접근 실습</title>
+    <link rel="stylesheet" href="../css/13_요소접근_실습.css" />
+  </head>
+  <body>
+    <h1 id="title">안녕하세요, 반가워요!</h1>
+    <button onclick="changeColor()">제목 색상 변경</button>
+
+    <hr />
+
+    <h2 class="text">텍스트 1</h2>
+    <h2 class="text">텍스트 2</h2>
+    <h2 class="text">텍스트 3</h2>
+    <button onclick="textBold()">텍스트 강조</button>
+
+    <br />
+
+    <label>이름을 입력하세요.</label><br />
+    <input type="text" id="input" name="user-name" placeholder="이름" />
+    <button onclick="checkName()">이름 표시</button>
+    <p>당신의 이름:<span id="nameOutput"></span></p>
+
+    <script src="../js/13_요소접근_실습.js"></script>
+  </body>
+</html>

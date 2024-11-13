@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>약관동의 확인</title>
+    <link rel="stylesheet" href="../css/241113_약관동의확인.css" />
+  </head>
+  <body>
+    <form id="terms-form">
+      <div id="name-div">
+        <h1>회원가입 약관 및 취미 선택</h1>
+
+        <input type="checkbox" name="agree" />서비스 이용 약관 동의 <br />
+        <input type="checkbox" name="agree" />개인정보 수집 및 이용 동의<br />
+        <input type="checkbox" name="agree" />마케팅 정보 수신 동의 (선택)
+        <h2>취미 선택</h2>
+        <input type="checkbox" name="hobby" />독서<br />
+        <input type="checkbox" name="hobby" />운동<br />
+        <input type="checkbox" name="hobby" />요리<br />
+        <input type="checkbox" name="hobby" />여행<br />
+      </div>
+      <button onclick="ok()">확인하기</button>
+      <h3 id="result"></h3>
+    </form>
+    <script src="241113_약관동의확인.js"></script>
+  </body>
+</html>
