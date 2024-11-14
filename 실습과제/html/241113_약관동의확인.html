@@ -15,10 +15,12 @@
         <input type="checkbox" name="agree" />개인정보 수집 및 이용 동의<br />
         <input type="checkbox" name="agree" />마케팅 정보 수신 동의 (선택)
         <h2>취미 선택</h2>
-        <input type="checkbox" name="hobby" />독서<br />
-        <input type="checkbox" name="hobby" />운동<br />
-        <input type="checkbox" name="hobby" />요리<br />
-        <input type="checkbox" name="hobby" />여행<br />
+        <div onclick="checkHobby()" class="on">
+          <input type="checkbox" name="hobby" />독서<br />
+          <input type="checkbox" name="hobby" />운동<br />
+          <input type="checkbox" name="hobby" />요리<br />
+          <input type="checkbox" name="hobby" />여행<br />
+        </div>
       </div>
       <button onclick="ok()">확인하기</button>
       <h3 id="result"></h3>

@@ -1,5 +1,6 @@
+const agree = document.getElementsByName("agree");
 function ok(){
-    const agree = document.getElementsByName("agree");
+    
     const result = document.getElementById("result");
     const hobby = document.getElementsByName("hobby");
 
@@ -11,8 +12,9 @@ function ok(){
             str += hobby[i].value;
             count++
         }
-        result.innerHTML = `${str} <br> 선택된 취미 개수 : ${str.length}`;
+        result.innerHTML = `${str} <br> 선택된 취미 개수 : ${str.length}`;//값이 사라짐
     }
+
     /*
     if(count > 0){
         
@@ -21,4 +23,11 @@ function ok(){
     }
     
     */
+}
+
+function checkHobby(){
+    const on = document.getElementsByClassName("on");
+    if (agree.checked){
+        on.style.display = "block"
+    }
 }

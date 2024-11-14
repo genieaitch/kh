@@ -52,3 +52,7 @@ button:hover {
   color: #d2691e;
   text-align: center;
 }
+
+.on {
+  display: none;
+}
