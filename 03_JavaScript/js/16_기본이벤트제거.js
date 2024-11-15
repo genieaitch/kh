@@ -53,3 +53,28 @@ function 제출(e){
     }
     alert("회원가입이 완료되었습니다.")
 }
+
+/*---------------------------------------------------------------*/
+
+const btn = document.getElementById("btn");
+const inputTest = document.getElementById("inputTest");
+
+btn.addEventListener("click", ()=>{
+    const vle = inputTest.value;
+
+    /*만약에 입력한 값이 없을 때만 alert창을 표기하길 원한다면
+    vle값에 !붙이면 false가 true가 됨*/
+
+    if(!vle) {
+        alert("입력란에 값을 입력해 주세요.");
+    }
+})
+/*
+아래 모두 익명함수로 버튼을 클릭 시 실행할 기능 작성
+1. function 기능명 생략 (매개변수 들어갈 자리 설정) {실행문장들 작성}
+btn.addEventListener("click", function(){});
+
+2. 기능 자체 표현을 생략 (매개변수 들어갈 자리 설정) => {실행문장들 작성}
+2번을 가장 많이 사용
+btn.addEventListener("click", ()=>{});
+*/
